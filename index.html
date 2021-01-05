@@ -3,10 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>Coffee Shop Landing Page</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>Landing Page</title>
 </head>
 <body>
-  <h1>Coffee Shop</h1>
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <img id="header-img"  src="./img/sweet-aces-logo.png" alt="Sweet Aces logo">
+      </div>
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="container py-section">
+      <div class="hero-content">
+        <h1 class="hero-heading">
+          Sweet Dreams<br>
+          Do Come True
+        </h1>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container py-section">
+      <div class="section-heading">
+        <i class="fas fa-birthday-cake"></i>
+        <h2>Services</h2>
+      </div>
+      
+      <div class="section-content">
+        <div class="services-row">
+          <div class="services-info">
+            <h3>Customized Cakes</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quisquam alias dolore nulla ullam eaque, suscipit dolorem nesciunt vitae ducimus!</p>
+          </div>
+          
+          <div class="services-image">
+            <img class="responsive" src="./img/services-01.jpg" alt="Customized Cakes">
+          </div>
+        </div>
+
+        <div class="services-row">
+          <div class="services-info">
+            <h3>Customized Cupcakes</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, libero, qui possimus animi laborum ducimus, culpa quis quidem aspernatur molestiae officiis iure expedita fugiat iure!</p>
+          </div>
+          <div class="services-image">
+            <img class="responsive" src="./img/services-02.jpg" alt="Customized Cupcakes">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   
+  <section id="gallery">
+    <div class="py-section">
+      <div class="section-heading">
+        <i class="fas fa-birthday-cake"></i>
+        <h2>Gallery</h2>  
+      </div>
+
+      <div class="section-content">
+        <div class="img-container">
+          <img src="./img/gallery-01.jpg" alt="Cake 1" class="responsive">
+        </div>
+        <div class="img-container">
+          <img src="./img/gallery-02.jpg" alt="Cake 2" class="responsive">
+        </div>
+        <div class="img-container">
+          <img src="./img/gallery-03.jpg" alt="Cake 3" class="responsive">
+        </div>
+        <div class="img-container">
+          <img src="./img/gallery-04.jpg" alt="Cake 4" class="responsive">
+        </div>
+        <div class="img-container">
+          <img src="./img/gallery-05.jpg" alt="Cake 5" class="responsive">
+        </div>
+        <div class="img-container">
+          <img src="./img/gallery-06.jpg" alt="Cake 6" class="responsive">
+        </div>
+        <div class="img-container">
+          <img src="./img/gallery-07.jpg" alt="Cake 7" class="responsive">
+        </div>
+        <div class="img-container">
+          <img src="./img/gallery-08.jpg" alt="Cake 8" class="responsive">
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="section-heading video-heading">
+        <h2>How to make cake</h2>  
+      </div>
+      <div class="video-container">
+        <iframe class="responsive-iframe" id="video" width="1280" height="721" src="https://www.youtube.com/embed/UlKkQ9qnmzY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container py-section">
+      <div class="section-heading">
+        <i class="fas fa-birthday-cake"></i>
+        <h2>Contact Us</h2>
+      </div>
+
+      <div class="section-content">
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+          <div class="form-group">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+
+          <div class="form-group">
+            <p>Message</p>
+            <textarea name="comment" id="comment" rows="8" placeholder="Type your message here..."></textarea>
+          </div>
+
+          <input type="submit" class="btn" id="submit" value="Send">
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Sweet Aces&copy; 2020
+  </footer>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
